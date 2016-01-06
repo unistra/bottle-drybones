@@ -104,7 +104,7 @@ def test():
         'web': ['192.168.1.2'],
         'lb': ['192.168.1.2'],
     }
-    env.backends = env.roledefs['web']
+    env.backends = ['127.0.0.1']
     env.server_name = 'myapp-dev.net'
     env.short_server_name = 'myapp-dev'
     env.static_folder = '/site_media/'
