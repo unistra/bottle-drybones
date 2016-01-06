@@ -59,7 +59,7 @@ env.req_pydiploy_version = '1.1.6.0'
 # env.extra_pkg_to_install = ['ponysay'] # extra debian/ubuntu package(s) to install on remote
 # env.cfg_shared_files = ['config','/app/path/to/config/config_file'] # config files to be placed in shared config dir
 # env.extra_symlink_dirs = ['mydir','/app/mydir'] # dirs to be symlinked in shared directory
-# env.extra_goals = ['preprod'] # add extra goal(s) to defaults (test,dev,prod)
+env.extra_goals = ['preprod'] # add extra goal(s) to defaults (test,dev,prod)
 # env.verbose = True # verbose display for pydiploy default value = True
 # env.no_config_test = False # avoid config checker if True
 # env.maintenance_text = "" # add a customize maintenance text for maintenance page
@@ -77,14 +77,14 @@ env.req_pydiploy_version = '1.1.6.0'
 # env.no_circus_web = True # true if you don't want circus-web
 # env.circus_backend = 'gevent' # name of circus backend to use
 
-# env.chaussette_backend = 'waitress' # name of chaussette backend to use. You need to add this backend in the app requirement file.
+env.chaussette_backend = 'waitress' # name of chaussette backend to use. You need to add this backend in the app requirement file.
 
 # env.nginx_location_extra_directives = ['proxy_read_timeout 120'] # add directive(s) to nginx config file in location part
 # env.nginx_force_start = True # if True, it forces to start nginx when nginx is not started
 
 # env.socket_host='localhost' # use it in env method to force a socket host
 
-# env.run_tests_command = 'tox'
+env.run_tests_command = 'tox'
 
 # env.media_folder = '/media' # path of the application's media files
 # env.remote_media_folder = '/srv/media/myapp' # remote folder of the application's media files
