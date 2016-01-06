@@ -1,0 +1,8 @@
+[run]
+source = {{cookiecutter.repo_name}}/
+omit =
+        {{cookiecutter.repo_name}}/tests.py
+        {{cookiecutter.repo_name}}/settings/dev.py
+        {{cookiecutter.repo_name}}/settings/preprod.py
+        {{cookiecutter.repo_name}}/settings/prod.py
+        {{cookiecutter.repo_name}}/settings/test.py
